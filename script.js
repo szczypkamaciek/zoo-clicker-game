@@ -1,3 +1,8 @@
+let seconds=0;
+let t=0;
+
+
+
 const openNav = () => {
 	document.getElementById("shop").style.width = "65%";
 }
@@ -10,7 +15,7 @@ const playerAnimals = {
 	total: function () {
 		return this.foxes + this.beavers + this.monkeys + this.pandas + this.bears + this.seals + this.tigers + this.elephants + this.lions + this.giraffes;
 		},
-	foxes: 1,
+	foxes: 0,
 	beavers: 0,
 	monkeys: 0,
 	pandas: 0,
@@ -43,6 +48,23 @@ function click() {
 	playerWallet.totalClicks ++;
 	playerWallet.totalMoneyClicked += playerWallet.cashClick;
 	
+	document.getElementById("current-money").innerHTML = playerWallet.currentMoney;
+	
+	document.getElementById("total-clicks").innerHTML = playerWallet.totalClicks;
+	
+	document.getElementById("total-dollars-clicked").innerHTML = playerWallet.totalMoneyClicked;
 }
+
+function addSecond() {
+	playerWallet.totalTime++;
+	document.getElementById("total-time").innerHTML = playerWallet.totalTime;
+	timer();
+}
+
+function timer(){
+	t=setTimeout(addSecond, 1000);
+}
+window.onload = addSecond();
+
 
 

@@ -2,7 +2,7 @@ body {
 	font-family: 'Gaegu', cursive, sans-serif;
 	background-color: #d9d9da;
 	margin: 0;
-	font-size: 16px;
+	font-size: 10px;
 }
 
 header {
@@ -59,6 +59,7 @@ header {
 	width: 25%;
 	height: 25%;
 }
+
 #shop-icon {
 	padding-left: 1%;
 	padding-top: 1%;
@@ -101,8 +102,8 @@ main{
 }
 
 #click-area img:hover {
-	height: 55%;
-	width: 55%;
+	height: 250px;
+	width: 250px;
 }
 
 
@@ -139,7 +140,7 @@ main{
 }
 .shop-element table {
 	border-spacing: 0;
-	font-size: 18px
+	font-size: 12px
 }
 
 .shop-element td{
@@ -172,7 +173,7 @@ main{
 .message-box div {
 	width: 50%;
 	margin-left: 25%;
-	font-size: 25px;
+	font-size: 20px;
 	text-align: center;
 }
 
@@ -208,7 +209,7 @@ main{
 	opacity: 0.98;
 	color: white;
 	text-align: center;
-	font-size: 22px;
+	font-size: 20px;
 }
 #win-message-box img {
 	width: 250px

@@ -1,12 +1,15 @@
 body {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Gaegu', cursive, sans-serif;
 	background-color: #d9d9da;
 	margin: 0;
+	font-size: 16px;
 }
 
 header {
 	background-color: #333333;
 	margin-left: 0px;
+	display: flex;
+	
 }
 
 .shop {
@@ -16,18 +19,19 @@ header {
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background-color: rgb(0,0,0);
-	background-color: rgba(0,0,0, 0.9);
+	background-color: #333333;
+	opacity: 0.9;
 	overflow-x: hidden;
 	transition: 0.5s;
 }
 
-.shop-content {
+.shop-element {
 	position: relative;
-	top: 25%;
+	top: 1%;
 	width: 100%;
 	text-align: center;
 	margin-top: 30px;
+	color: white;
 }
 
 .shop a {
@@ -45,50 +49,63 @@ header {
 
 .shop .closebtn {
 	position: absolute;
-	top: 20px;
-	right: 45px;
+	top: 0;
+	right: 20px;
 	font-size: 60px;
+	z-index: 1;
 }
 
-@media screen and (max-height: 450px) {
-  .shop a {font-size: 20px}
-  .shop .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
+.shop-icons {
+	width: 25%;
+	height: 25%;
+}
+#shop-icon {
+	padding-left: 1%;
+	padding-top: 1%;
+	float: left;
+	position: relative;
+}
+#logo {
+	position: absolute;
+	margin-left: 38%;
+}
+
+main{
+	width: 100%;
+	display: flex;
+	margin: auto;
 }
 
 #left-container {
 	width: 25%;
 	background-color: #333333;
-	margin-top: 30px;
+	margin-top: 15px;
 	margin-left: 30px;
 	color: white;
 	-webkit-box-shadow: 1px 1px 35px 5px rgba(51,51,51,1);
 	-moz-box-shadow: 1px 1px 35px 5px rgba(51,51,51,1);
 	box-shadow: 1px 1px 35px 5px rgba(51,51,51,1);
 	float: left;
-	display:  inline-block;
-	z-index: 0;
-	position: absolute;
+	text-align: center;
+	padding-left: 15px;
+	order: 1;
 }
 
 #click-area {
-	display: inline-block;
-	margin-left: 45%;
-	margin-top: 10%;
-}
-
-#click-area img {
-	height: 90%;
-	width: 90%;
+	width: 30%;
+	height: 50%;
+	margin-left: auto;
+	margin-top: 150px;
+	float: left;
+	order: 2;
 }
 
 #click-area img:hover {
-	height: 100%;
-	width: 100%;
+	height: 55%;
+	width: 55%;
 }
+
+
 
 #right-container {
 	width: 25%;
@@ -100,7 +117,99 @@ header {
 	-moz-box-shadow: 1px 1px 35px 5px rgba(51,51,51,1);
 	box-shadow: 1px 1px 35px 5px rgba(51,51,51,1);
 	float: right;
-	display:  inline-block;
-	z-index: 0;
-	position: initial;
+	padding-left: 15px;
+	order: 3;
+}
+
+.animal {
+	display: inline-block;
+	width: 100%;
+}
+
+.animal h2 {
+	margin-top: 15px;
+	margin-left: 80px;
+	text-align: left;
+}
+
+.animal-icons {
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+.shop-element table {
+	border-spacing: 0;
+	font-size: 18px
+}
+
+.shop-element td{
+	padding: 0;
+	line-height: 15px;
+}
+
+.shop-icon {
+	width: 75px;
+	height: 75px;
+}
+
+.top-row {
+	border-top: 2px solid white;
+}
+
+.message-box {
+	display: block;
+	position: absolute;
+	width:100%;
+	height:100%;
+	margin: auto auto;
+	z-index: 2;
+	background: #333333;
+	opacity: 0.9;
+	color: white;
+	
+}
+
+.message-box div {
+	width: 50%;
+	margin-left: 25%;
+	font-size: 25px;
+	text-align: center;
+}
+
+.message-box a, #win-message-box a{
+	color: white;
+}
+
+.message-box ol, h1,{
+	text-align: justify;
+}
+
+.message-box button {
+	height: 85px;
+	width: 110px;
+	border-radius: 5px;
+	background: #d9d9da;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'Gaegu';
+}
+
+.message-box button:hover {
+	border: 1px solid #333333;
+}
+#win-message-box {
+	display: none;
+	position: absolute;
+	width:100%;
+	height:100%;
+	margin: auto auto;
+	z-index: 2;
+	background: #333333;
+	opacity: 0.98;
+	color: white;
+	text-align: center;
+	font-size: 22px;
+}
+#win-message-box img {
+	width: 250px
 }

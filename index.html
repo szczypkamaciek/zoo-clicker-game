@@ -3,88 +3,256 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="img/favicon.ico">
+		<link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
+		<script defer src="script.js"></script>
 	</head>
 	<body>
 		<header>
 			<div id="shop" class="shop">
 			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			  <div class="shop-content">
-
+				<div class="shop-element">
+					<h2 id="alert" style="color: white">Click on icon to buy :)</h2>
+					<table>
+						<tr>
+							<td rowspan="3" class="top-row"><img src="img/fox.svg" id ="fox-shop" class="shop-icon"></td>
+							<td rowspan="3" class="top-row"><h2>Fox</h2></td>
+							<td class="top-row"><p>Price </p></td>
+							<td class="top-row"><p>200$</p></td>
+							<td rowspan="3" class="top-row"><img src="img/beaver.svg" id ="beaver-shop" class="shop-icon"></td>
+							<td rowspan="3" class="top-row"><h2>Beaver</h2></td>
+							<td class="top-row"><p>Price</p></td>
+							<td class="top-row"><p>400$</p></td>
+						</tr>
+						<tr>
+							<td><p>$/click</p></td>
+							<td><p>4</p></td>
+							<td><p>$/click</p></td>
+							<td><p>10</p></td>
+						</tr>
+						<tr>
+							<td><p>$/sec</p></td>
+							<td><p>2</p></td>
+							<td><p>$/sec</p></td>
+							<td><p>5</p></td>
+						</tr>
+						<tr>
+							<td rowspan="3" class="top-row"><img src="img/monkey.svg" id ="monkey-shop" class="shop-icon"></td>
+							<td rowspan="3" class="top-row"><h2>Monkey</h2></td>
+							<td class="top-row"><p>Price</p></td>
+							<td class="top-row"><p>1 500$</p></td>
+							<td rowspan="3" class="top-row"><img src="img/panda.svg" id ="panda-shop" class="shop-icon"></td>
+							<td rowspan="3" class="top-row"><h2>Panda</h2></td>
+							<td class="top-row"><p>Price</p></td>
+							<td class="top-row"><p>3 000$</p></td>
+						</tr>
+						<tr>
+							<td><p>$/click</p></td>
+							<td><p>30</p></td>
+							<td><p>$/click</p></td>
+							<td><p>60</p></td>
+						</tr>
+						<tr>
+							<td><p>$/sec</p></td>
+							<td><p>15</p></td>
+							<td><p>$/sec</p></td>
+							<td><p>30</p></td>
+						</tr>
+						<tr>
+							<td rowspan="3" class="top-row"><img src="img/bear.svg" id ="bear-shop" class="shop-icon"></td>
+							<td rowspan="3" class="top-row"><h2>Bear</h2></td>
+							<td class="top-row"><p>Price</p></td>
+							<td class="top-row"><p>5 000$</p></td>
+							<td rowspan="3" class="top-row"><img src="img/walrus.svg" id ="walrus-shop" class="shop-icon"></td>
+							<td rowspan="3" class="top-row"><h2>Walrus</h2></td>
+							<td class="top-row"><p>Price</p></td>
+							<td class="top-row"><p>7 500$</p></td>
+						</tr>
+						<tr>
+							<td><p>$/click</p></td>
+							<td><p>100</p></td>
+							<td><p>$/click</p></td>
+							<td><p>150</p></td>
+						</tr>
+						<tr>
+							<td><p>$/sec</p></td>
+							<td><p>50</p></td>
+							<td><p>$/sec</p></td>
+							<td><p>75</p></td>
+						</tr>
+						<tr>
+							<td rowspan="3" class="top-row"><img src="img/tiger.svg" id ="tiger-shop" class="shop-icon" ></td>
+							<td rowspan="3" class="top-row"><h2>Tiger</h2></td>
+							<td class="top-row"><p>Price</p></td>
+							<td class="top-row"><p>10 000$</p></td>
+							<td rowspan="3" class="top-row"><img src="img/elephant.svg" id ="elephant-shop" class="shop-icon"></td>
+							<td rowspan="3" class="top-row"><h2>Elephant</h2></td>
+							<td class="top-row"><p>Price</p></td>
+							<td class="top-row"><p>15 000$</p></td>
+						</tr>
+						<tr>
+							<td><p>$/click</p></td>
+							<td><p>200</p></td>
+							<td><p>$/click</p></td>
+							<td><p>300</p></td>
+						</tr>
+						<tr>
+							<td><p>$/sec</p></td>
+							<td><p>100</p></td>
+							<td><p>$/sec</p></td>
+							<td><p>150</p></td>
+						</tr>
+						<tr>
+							<td rowspan="3" class="top-row"><img src="img/lion.svg" id ="lion-shop" class="shop-icon"></td>
+							<td rowspan="3" class="top-row"><h2>Lion</h2></td>
+							<td class="top-row"><p>Price</p></td>
+							<td class="top-row"><p>20 000$</p></td>
+							<td rowspan="3" class="top-row"><img src="img/giraffe.svg" id ="giraffe-shop" class="shop-icon"></td>
+							<td rowspan="3" class="top-row"><h2>Giraffe</h2></td>
+							<td class="top-row"><p>Price</p></td>
+							<td class="top-row"><p>25 000$</p></td>
+						</tr>
+						<tr>
+							<td><p>$/click</p></td>
+							<td><p>400</p></td>
+							<td><p>$/click</p></td>
+							<td><p>500</p></td>
+						</tr>
+						<tr>
+							<td><p>$/sec</p></td>
+							<td><p>200</p></td>
+							<td><p>$/sec</p></td>
+							<td><p>250</p></td>
+						</tr>
+					</table>
+				</div>
 
 			  </div>
+			
+			<div id="shop-icon">
+				<span style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="img/shop.svg"  style="height: 75px" onlick="openNav()"></span>
 			</div>
-			<div>
-				<span style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="img/shop.svg" alt="shop-icon" style="height: 75px" onlick="openNav()"></span>
+			
+			<div id="logo">
+				<img src="img/logo.png">
 			</div>
+			
 		</header>
 		<main>
+			
+			
 			<div id="left-container">
-				<h1>Your animals</h1>
-				<div class="fox">
-					<h2>Foxes</h2>
+				<h1>YOUR ANIMALS</h1>
+				<div class="animal">
+					<img class="animal-icons" src="img/fox.svg">
+					<h2>Foxes: <span id="fox">0</span></h2> 
 				</div>
-				<div class="beaver">
-					<h2>Foxes</h2>
+				<div class="animal">
+					<img class="animal-icons" src="img/beaver.svg">
+					<h2>Beavers: <span id="beaver">0</span></h2> 
 				</div>
-				<div class="monkey">
-					<h2>Foxes</h2>
+				<div class="animal">
+					<img class="animal-icons" src="img/monkey.svg">
+					<h2>Monkeys: <span id="monkey">0</span></h2> 	
 				</div>
-				<div class="panda">
-					<h2>Foxes</h2>
+				<div class="animal">
+					<img class="animal-icons" src="img/panda.svg">
+					<h2>Pandas: <span id="panda">0</span></h2> 
 				</div>
-				<div class="bear">
-					<h2>Foxes</h2>
+				<div class="animal">
+					<img class="animal-icons" src="img/bear.svg">
+					<h2>Bears: <span id="bear">0</span></h2> 
 				</div>
-				<div class="seal">
-					<h2>Foxes</h2>
+				<div class="animal">
+					<img class="animal-icons" src="img/walrus.svg">
+					<h2>Walruses: <span id="walrus">0</span></h2> 
 				</div>
-				<div class="tiger">
-					<h2>Foxes</h2>
+				<div class="animal">
+					<img class="animal-icons" src="img/tiger.svg">
+					<h2>Tigers: <span id="tiger">0</span></h2> 
 				</div>
-				<div class="elephant">
-					<h2>Foxes</h2>
+				<div class="animal">
+					<img class="animal-icons" src="img/elephant.svg">
+					<h2>Elephants: <span id="elephant">0</span></h2> 
 				</div>
-				<div class="lion">
-					<h2>Foxes</h2>
+				<div class="animal">
+					<img class="animal-icons" src="img/lion.svg">
+					<h2>Lions: <span id="lion">0</span></h2> 
 				</div>
-				<div class="giraffe">
-					<h2>Foxes</h2>
+				<div class="animal">
+					<img class="animal-icons" src="img/giraffe.svg">
+					<h2>Giraffes: <span id="giraffe">0</span></h2>
 				</div>
 			</div>
+			
 			<div id="click-area">
 				<img id="click-img" src="img/tickets.png">
 			</div>
 			
 			<div id="right-container">
-				<h1>Your wallet stats</h1>
+				<h1 style="text-align: center">YOUR WALLET STATS</h1>
 				<div class="current-money">
 					<h2>Current money: <span id="current-money">0</span> $</h2>
 				</div>
 				<div class="cash-sec">
-					<h2>Dollars per second: <span id="cash-sec"></span></h2>
+					<h2>Dollars per second: <span id="cash-sec">0</span> $</h2>
 				</div>
 				<div class="cash-click">
-					<h2>Dollars per click: <span id="cash-click"></span></h2>
+					<h2>Dollars per click: <span id="cash-click">1</span> $</h2>
 				</div>
 				<div class="total-dollars-clicked">
-					<h2>Total dollars clicked: <span id="total-dollars-clicked"></span></h2>
+					<h2>Total dollars clicked: <span id="total-dollars-clicked">0</span> $</h2>
 				</div>
 				<div class="total-by-time">
-					<h2>Total dollars by time: <span id="total-by-time"></span></h2>
+					<h2>Total dollars by time: <span id="total-by-time"></span> $</h2>
 				</div>
 				<div class="total-clicks">
-					<h2>Total clicks: <span id="total-clicks"></span></h2>
+					<h2>Total clicks: <span id="total-clicks">0</span></h2>
 				</div>
 				<div class="total-time">
 					<h2>Total time spent: <span id="total-time"></span></h2>
 				</div>
 				<div class="total-dollars-spent">
-					<h2>Total dollars spent: <span id="total-dollars-spent"></span></h2>
+					<h2>Total dollars spent: <span id="total-dollars-spent">0</span> $</h2>
+				</div>
+				
+			</div>
+			<div class="message-box">
+				<div>
+					<h1>Hi player!!!</h1>
+					<p>Let me present You the rules of Zoo Clicker Game :)</p>
+					<ol>
+						<li>In this game are 10 different types of zoo-animals. </li>
+						<li>Animals generate dollars! You can earn money by clicking on tickets or if You don't want to click, just wait a few seconds :)</li>
+						<li>Maximum amount animals of one type is 50 pieces.</li>
+						<li>You will win the game if You collect at least one animal of each type.
+						</li>
+					</ol>
+					<p>I'll give You 100$ for a good start. Have fun!</p>
+					<p>If You have a question or find a bug, please feel free to contact me at <a href="mailto: szczypka.maciek@gmail.com">szczypka.maciek@gmail.com</a> </p>
+					<button type="button" id="message-button"><p>Let's Go!</p></button>
+				</div>
+			</div>
+				
+				<div id="win-message-box" style="display: none">
+				<div>
+					<h1>Congratulations !!!</h1>
+					
+					<img id="trophy" src="img/trophy.svg">
+				
+					
+						<p>Total time: <span id="end-total-time"></span></p>
+						<p>Total clicks: <span id="end-total-clicks"></span></p>
+						<p>Total animals collected: <span id="end-total-animals"></span></p>
+						<p>Total money earned: <span id="end-total-money-earned"></span> $</p>
+					
+					
+					<p>If You have a question or find a bug, please feel free to contact me at <a href="mailto: szczypka.maciek@gmail.com">szczypka.maciek@gmail.com</a> </p>
 				</div>
 				
 			</div>
 		</main>
 		
-		<script src="script.js"></script>
+		
 	</body>
 </html>

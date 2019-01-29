@@ -9,7 +9,7 @@ header {
 	background-color: #333333;
 	margin-left: 0px;
 	display: flex;
-	
+	position: relative;
 }
 
 .shop {
@@ -67,8 +67,8 @@ header {
 	position: relative;
 }
 #logo {
-	position: absolute;
-	margin-left: 38%;
+	align-items: center;
+	position: relative;
 }
 
 main{
@@ -101,9 +101,14 @@ main{
 	order: 2;
 }
 
-#click-area img:hover {
+#click-area img {
 	height: 250px;
 	width: 250px;
+}
+
+#click-area img:hover {
+	height: 260px;
+	width: 260px;
 }
 
 
@@ -158,7 +163,6 @@ main{
 }
 
 .message-box {
-	display: block;
 	position: absolute;
 	width:100%;
 	height:100%;

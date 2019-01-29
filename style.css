@@ -10,6 +10,7 @@ header {
 	margin-left: 0px;
 	display: flex;
 	position: relative;
+	justify-content: space-evenly;
 }
 
 .shop {
@@ -63,12 +64,17 @@ header {
 #shop-icon {
 	padding-left: 1%;
 	padding-top: 1%;
-	float: left;
-	position: relative;
+	
 }
 #logo {
-	align-items: center;
 	position: relative;
+	width: 100%;
+	text-align: center;
+	margin-left: -75px;
+}
+
+#logo img {
+	height: 100px;
 }
 
 main{

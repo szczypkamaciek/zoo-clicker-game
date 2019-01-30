@@ -24,6 +24,7 @@ header {
 	opacity: 0.9;
 	overflow-x: hidden;
 	transition: 0.5s;
+	z-index: 2;
 }
 
 .shop-element {
@@ -64,6 +65,7 @@ header {
 #shop-icon {
 	padding-left: 1%;
 	padding-top: 1%;
+	z-index: 1;
 	
 }
 #logo {
@@ -71,6 +73,7 @@ header {
 	width: 100%;
 	text-align: center;
 	margin-left: -75px;
+	
 }
 
 #logo img {

@@ -7,10 +7,21 @@ body {
 
 header {
 	background-color: #333333;
-	margin-left: 0px;
+	margin-left: 0;
 	display: flex;
 	position: relative;
 	justify-content: space-evenly;
+}
+main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 450px;
+}
+
+h1 {
+	color: #fff;
+	font-size: 4em;
 }
 
 .shop {
@@ -20,8 +31,7 @@ header {
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background-color: #333333;
-	opacity: 0.9;
+	background-color: rgba(51,51,51,.975);
 	overflow-x: hidden;
 	transition: 0.5s;
 	z-index: 2;
@@ -40,7 +50,7 @@ header {
 	padding: 8px;
 	text-decoration: none;
 	font-size: 36px;
-	color: #818181;
+	color: #d5d5d5;
 	display: block;
 	transition: 0.3s;
 }
@@ -54,6 +64,7 @@ header {
 	top: 0;
 	right: 20px;
 	font-size: 60px;
+	line-height: 60px;
 	z-index: 1;
 }
 
@@ -63,82 +74,88 @@ header {
 }
 
 #shop-icon {
-	padding-left: 1%;
-	padding-top: 1%;
+	margin: auto 0 auto 1%;
 	z-index: 1;
-	
 }
+
 #logo {
 	position: relative;
 	width: 100%;
 	text-align: center;
 	margin-left: -75px;
-	
 }
 
 #logo img {
 	height: 100px;
 }
 
-main{
+main {
 	width: 100%;
 	display: flex;
 	margin: auto;
 }
 
 #left-container {
-	width: 25%;
+	width: 410px;
+	height: 100%;
 	background-color: #333333;
-	margin-top: 15px;
-	margin-left: 30px;
+	margin-top: 20px;
+	margin-left: 20px;
 	color: white;
 	-webkit-box-shadow: 1px 1px 35px 5px rgba(51,51,51,1);
 	-moz-box-shadow: 1px 1px 35px 5px rgba(51,51,51,1);
 	box-shadow: 1px 1px 35px 5px rgba(51,51,51,1);
-	float: left;
 	text-align: center;
-	padding-left: 15px;
-	order: 1;
 }
 
 #click-area {
-	width: 30%;
-	height: 50%;
-	margin-left: auto;
-	margin-top: 150px;
-	float: left;
-	order: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
 }
 
 #click-area img {
 	height: 250px;
 	width: 250px;
+	transition: transform .15s ease-in-out;
+	transform-origin: center center;
+	cursor: pointer;
 }
 
 #click-area img:hover {
-	height: 260px;
-	width: 260px;
+	transform: scale(1.05);
 }
 
-
-
 #right-container {
-	width: 25%;
+	width: 30%;
+	height: 100%;
 	background-color: #333333;
-	margin-top: 30px;
-	margin-right: 30px;
+	margin-top: 20px;
+	margin-right: 20px;
 	color: white;
 	-webkit-box-shadow: 1px 1px 35px 5px rgba(51,51,51,1);
 	-moz-box-shadow: 1px 1px 35px 5px rgba(51,51,51,1);
 	box-shadow: 1px 1px 35px 5px rgba(51,51,51,1);
-	float: right;
 	padding-left: 15px;
-	order: 3;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+#right-container > div > h2 {
+	margin: 5px;
 }
 
 .animal {
 	display: inline-block;
-	width: 100%;
+	width: 200px;
+}
+.animal-wrapper {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	flex-flow: wrap;
+	height: 90%;
 }
 
 .animal h2 {
@@ -150,21 +167,27 @@ main{
 .animal-icons {
 	width: 50px;
 	height: 50px;
+	padding: 0 0 10px 15px;
 	float: left;
 }
 .shop-element table {
 	border-spacing: 0;
-	font-size: 12px
+	font-size: 12px;
+	width: 100%;
 }
 
-.shop-element td{
+.shop-element td {
 	padding: 0;
-	line-height: 15px;
+	line-height: 12px;
 }
 
 .shop-icon {
-	width: 75px;
-	height: 75px;
+	width: 50px;
+	height: 50px;
+	transition: transform .2s ease-in-out;
+}
+.shop-icon:hover {
+	transform: scale(1.1);
 }
 
 .top-row {
@@ -194,18 +217,15 @@ main{
 	color: white;
 }
 
-.message-box ol, h1,{
-	text-align: justify;
-}
-
 .message-box button {
-	height: 85px;
+	height: 50px;
 	width: 110px;
 	border-radius: 5px;
 	background: #d9d9da;
 	font-size: 20px;
 	font-weight: bold;
-	font-family: 'Gaegu';
+	font-family: 'Gaegu', serif;
+	line-height: 0;
 }
 
 .message-box button:hover {
